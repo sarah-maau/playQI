@@ -1,7 +1,11 @@
 const { DataTypes, Model } = require ('sequelize');
 const connexion = require('../database');
 
-class User extends Model {};
+class User extends Model {
+    getFullName(){
+        return `${this.firstname} ${this.lastname}`;
+    }
+};
 
 User.init({
     firstname: {

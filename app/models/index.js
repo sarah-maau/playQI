@@ -76,6 +76,6 @@ module.exports = {
     Level,
     Question,
     Quiz,
-    Tag, 
+    Tag,
     User
 };
