@@ -1,5 +1,5 @@
 --
--- Base de données :  "oquiz"
+-- Base de données :  "playqi"
 --
 
 BEGIN;
@@ -769,7 +769,7 @@ INSERT INTO "quiz" ("id", "title", "description", "image", "user_id") VALUES
 (8, 'L''architecture contemporaine', 'Mais oui, ce mur est droit !', 'architecture.jpg', 2),
 (9, 'La mythologie', 'Nom de Zeus !', 'mythology.jpg', 4),
 (10, 'L''Irlande', 'On t''offre une Guiness si t''as 10/10', 'ireland.jpg', 1),
-(11, 'Paris', 'Garanti vegan', 'paris.jpg', 1),
+(11, 'Paris', 'Garanti 100% bobo et vegan', 'paris.jpg', 1),
 (12, 'Les grandes métropoles', 'Non, ce n''est pas un pingouin!', 'metropol.jpg', 1),
 (13, 'Léonard De Vinci', 'Veni, vidi, vici, Vinci ?', 'davinci.jpg', 2),
 (14, 'Les catastrophes', 'C''est ce qui s''appelle la résilience', 'disaster.jpg', 4),
@@ -1041,7 +1041,7 @@ INSERT INTO "tag" ("id", "name") VALUES
 (3, 'Culture'),
 (4, 'Géographie'),
 (5, 'Histoire'),
-(6, 'Sciences et Technologies'),
+(6, 'Sciences'),
 (7, 'Cuisine'),
 (8, 'Art'),
 (9, 'Insolite');

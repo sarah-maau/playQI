@@ -1,7 +1,11 @@
 const { DataTypes, Model } = require ('sequelize');
 const connexion = require('../database');
 
-class Level extends Model {};
+class Level extends Model {
+    getLabel (){
+        return `${this.name.toLowerCase().replace(/\s+/g, '')}`
+    }
+};
 
 Level.init({
     name: {

@@ -7,6 +7,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/app/views');
 app.use(express.static('public'));
+app.use(express.static('public/images'));
 
 app.use(express.urlencoded({extended: true}));
 

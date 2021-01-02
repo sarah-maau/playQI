@@ -27,16 +27,17 @@
 }
 
 .level--beginner,
-.level--débutant {
+.level--facile {
     color: #28a745;
 }
 
 .level--medium,
-.level--confirmé {
+.level--çava {
     color: #ffc107;
 }
 
-.level--expert {
+.level--expert,
+.level--çapique {
     color: #dc3545;
 }
 
@@ -48,19 +49,19 @@
     border-color: #b8daff;
 }
 
-.tag--technologie {
+.tag--sciences {
     color: #383d41;
     background-color: #e2e3e5;
     border-color: #d6d8db;
 }
 
-.tag--gastronomie {
+.tag--cuisine {
     color: #155724;
     background-color: #d4edda;
     border-color: #c3e6cb;
 }
 
-.tag--littérature {
+.tag--art {
     color: #721c24;
     background-color: #f8d7da;
     border-color: #f5c6cb;
@@ -78,13 +79,13 @@
     border-color: #bee5eb;
 }
 
-.tag--nature {
+.tag--culture {
     color: #523e02;
     background-color: #d3c493;
     border-color: #c9b579;
 }
 
-.tag--astronomie {
+.tag--insolite {
     color: #1b1e21;
     background-color: #d6d8d9;
     border-color: #c6c8ca;

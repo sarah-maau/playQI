@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h2 class="h1 display-4">Play Q.I.</h2>
+    <p class="lead">Voici une liste des différents sujets présents sur Play Q.I.</p>
+</div>
+
+<div class="row">
+<% tags.forEach(tag => { %>
+    <div class="col-3 p-4 text-center">
+        <a class="btn btn-block btn-lg tag tag--<%= tag.getLabel() %>" href="/tag/<%=tag.id%>">
+            <%=tag.name%>
+        </a>
+    </div>
+<% }) %>
+</div>
+<%- include('partials/footer') %> 
