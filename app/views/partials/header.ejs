@@ -6,6 +6,9 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Play Q.I.</title>
+    <meta description="Découvrez une collection de jeux-questionnaires amusants pour booster votre Q.I. sur les animaux, les arts, la géographie, l'histoire, la gastronomie et les sciences.">
+    <meta name="author" content="Sarah - Promo Nautilus" >
     <!-- Reset CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -24,16 +27,16 @@
         <nav class="my-2 my-md-0 mr-md-3">
             <a class="p-2 text-white" href="/">Accueil</a>
             <a class="p-2 text-white" href="/tags">Sujets</a>
-            <%# if (locals.user) { %>
-                <a class="p-2 text-white" href="/profile"><%#= user.email %></a>
+            <% if (locals.user) { %>
+                <a class="p-2 text-white" href="/profile"><%= user.email %></a>
                 <a class="p-2 text-white" href="/logout">Se déconnecter</a>
-                <%#if (user.role === 'admin') { %>
+                <%if (user.role === 'admin') { %>
                     <a class="p-2 text-white" href="/admin">Admin</a>
-                <%# } %>
-            <%#} else { %>
+                <% } %>
+            <%} else { %>
                 <a class="p-2 text-white" href="/signup">S'inscrire</a>
                 <a class="p-2 text-white" href="/login">Se connecter</a>
-            <%# } %>    
+            <% } %>    
         </nav>
     </header>
     <main class="container">

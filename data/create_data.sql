@@ -1042,7 +1042,7 @@ INSERT INTO "tag" ("id", "name") VALUES
 (4, 'Géographie'),
 (5, 'Histoire'),
 (6, 'Sciences'),
-(7, 'Cuisine'),
+(7, 'Gastronomie'),
 (8, 'Art'),
 (9, 'Insolite');
 

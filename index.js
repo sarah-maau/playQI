@@ -11,7 +11,18 @@ app.use(express.static('public/images'));
 
 app.use(express.urlencoded({extended: true}));
 
-// session
+app.use(session({
+    secret: 'guess it!',
+    saveUninitialized: true,
+    resave: true,
+}));
+  
+app.use((req, res, next) => {
+    if (req.session.user) {
+        res.locals.user = req.session.user;
+    }
+    next();
+});
 
 app.use(router);
 
