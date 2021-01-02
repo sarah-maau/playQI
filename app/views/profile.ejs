@@ -1,0 +1,41 @@
+<%- include('partials/header') %>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h2 class="h1 display-4">Mon compte</h2>
+</div>
+
+<div class="row">
+    <div class="col-6 offset-3">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Nom</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Nom" aria-label="Nom" aria-describedby="basic-addon1" value="<%= user.lastname %>" disabled>
+        </div>
+    </div>
+    <div class="col-6 offset-3">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Prénom</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Prénom" aria-label="Prénom" aria-describedby="basic-addon1" value="<%= user.firstname %>" disabled>
+        </div>
+    </div>
+    <div class="col-6 offset-3">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Email</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" value="<%= user.email %>" disabled>
+        </div>
+    </div>
+    <div class="col-6 offset-3">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Rôle</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Rôle" aria-label="Rôle" aria-describedby="basic-addon1" value="<%= user.role %>" disabled> 
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %> 

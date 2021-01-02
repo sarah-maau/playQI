@@ -100,7 +100,7 @@ const authController = {
     },
     logout: (req, res) => { 
         req.session.destroy();
-        res.redirect('/');
+        return res.redirect('/');
     }
 };
 
