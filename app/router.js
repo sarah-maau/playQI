@@ -13,6 +13,7 @@ const isAdmin = require('./middlewares/isAdmin');
 
 router.get('/', mainController.homePage);
 router.get('/quiz/:id', quizController.quizPage);
+router.post('/quiz/:id', quizController.playquizPage);
 router.get('/tags', tagController.tagsPage);
 router.get('/tag/:id', tagController.tagPage);
 

@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h2 class="h1 display-4"><%=quiz.title%></h2>
+    <p class="lead"><%=quiz.description%></p>
+    <p class="font-weight-bold">par <%=quiz.author.getFullName()%></p>
+    <p class="lead" style="color: #ff00ff; font-weight: bold;">Vous avez obtenu : <%=score%>/<%=quiz.questions.length%></p>
+</div>
+
+<div class="row">
+    <% quiz.tags.forEach(tag => { %>
+        <div class="col-3 p-4 text-center">
+            <a class="btn btn-block btn-lg tag tag--<%=tag.getLabel()%>" href="/tag/<%=tag.id%>">
+                <%=tag.name%>
+            </a>
+        </div>
+    <% }) %>
+</div>
+
+<div class="row">
+    <% quiz.questions.forEach((question, index) => { %>
+    <div class="col-12">
+        <label class="badge level level--<%=question.level.getLabel()%>"><%=question.level.name%></label>
+        <h4>
+            <%=index + 1%>. <%=question.question%>
+        </h4>
+        <ol>
+        <%question.possible_answers.forEach(answer => { %>
+            
+            <% if (question.right_answer.id === answer.id) { %>
+                <li class="text-success">
+            <% } else { %>
+                <li>
+            <% } %>
+            <%=answer.description%>
+            <% if (userAnswers[index] == answer.id) { %>
+                <% if (userAnswers[index] == question.right_answer.id) { %>
+                    <span style="color:green;"> &#10004; </span>
+                <% } else { %>
+                    <span style="color:red; font-weight: bold;"> X </span>
+                <% } %>
+            <% } %>
+            </li>
+        <% }) %>
+        </ol>
+        <p style="font-style: italic;"><%=question.wiki%></p>
+    </div>
+    <% }) %>
+</div>
+
+<%- include('partials/footer') %> 
