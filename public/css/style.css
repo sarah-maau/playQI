@@ -1,15 +1,52 @@
+/* GENERAL */
+
+*{
+    font-family: 'Capriola', sans-serif;
+}
+
+.h3, h3, .card-title, .h1, h2 {
+    color: #484848;
+    font-weight: 600;
+    margin-bottom: 0.8em;
+}
+
+.p, p {
+    color: #616161;
+}
+
+li, h4 {
+    color: #484848;
+}
+
+.white-font {
+    color: #ffffff
+}
+
+.alert-font {
+    color: #0096c7;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.img-avatar {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
 .btn-primary, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .btn-primary.focus, .btn-primary:focus {
-    background-color: #f0f;
-    border-color: rgb(199, 0, 199);
+    background-color: #0096c7;
+    border-color: #219ebc;
+    font-weight: 600;
 }
 
 .btn-primary:hover {
-    background-color: rgb(199, 0, 199);
-    border-color: rgb(151, 0, 151);
+    background-color: #219ebc;
+    border-color:#0077b6;
 }
 
 .bg-primary {
-    background-color: #f0f!important;
+    background-color: #0096c7!important;
 }
 
 .form-signin {
@@ -26,6 +63,7 @@
     margin: auto;
 }
 
+/* LABELS */
 .level--beginner,
 .level--facile {
     color: #28a745;

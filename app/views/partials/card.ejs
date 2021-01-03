@@ -4,7 +4,7 @@
         <div class="card-body">
             <h5 class="card-title"><%=quiz.title%></h5>
             <p class="card-text"><%=quiz.description%></p>
-            <h6 class="card-subtitle mb-2 text-muted">par <%=quiz.author.getFullName()%></h6>
+            <h6 class="card-subtitle mb-2 text-muted">par <img class="img-avatar" src="<%=quiz.author.lastname.toLowerCase()%>.png"> <%=quiz.author.getFullName()%></h6>
             <a href="/quiz/<%=quiz.id%>" class="btn btn-primary">Jouer</a>
         </div>
     </div>

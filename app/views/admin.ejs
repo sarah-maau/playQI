@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+
+<div class="admin">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h2 class="h1 display-4">Admin Play Q.I.</h2>
+        <p class="lead">En tant qu'admin du site Play Q.I., vous avez la possibilité d'ajouter ou de modifier une catégorie et d'associer des quiz à d'autres catégories.</p>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <a href="/admin/tag" class="btn btn-lg btn-primary">Ajouter un sujet</a>
+        </div>
+        <div class="col-4">
+            <div class="dropdown">
+                <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Modifier une catégorie
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <% tags.forEach(tag => { %>
+                        <li><a class="dropdown-item" href="/admin/tag/<%= tag.id %>"><%= tag.name %></a></li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="dropdown">
+                <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Modifier un quiz
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <%quizzes.forEach(quiz => { %>
+                        <li><a class="dropdown-item" href="/admin/quiz/<%=quiz.id%>"><%=quiz.title%></a></li>
+                    <% }) %>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %> 
