@@ -3,7 +3,7 @@
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h2 class="h1 display-4"><%=quiz.title%></h2>
     <p class="lead"><%=quiz.description%></p>
-    <p class="font-weight-bold">par <%=quiz.author.getFullName()%></p>
+    <p class="font-weight-bold">par <img class="img-avatar" src="/<%=quiz.author.lastname.toLowerCase()%>.png"> <%=quiz.author.getFullName()%></p>
     <p class="lead" style="color: #ff00ff; font-weight: bold;">Vous avez obtenu : <%=score%>/<%=quiz.questions.length%></p>
 </div>
 
