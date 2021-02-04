@@ -2,16 +2,6 @@
 -- Schema playQI
 -- -----------------------------------------------------
 
-BEGIN;
-
-DROP TABLE IF EXISTS "level",
-"answer",
-"user",
-"quiz",
-"question",
-"tag",
-"quiz_has_tag";
-
 -- -----------------------------------------------------
 -- Table "level"
 -- -----------------------------------------------------
@@ -58,7 +48,7 @@ CREATE TABLE IF NOT EXISTS "quiz" (
 CREATE TABLE IF NOT EXISTS "question" (
     "id" SERIAL PRIMARY KEY,
     "question" TEXT NOT NULL,
-    "wiki" TEXT NULL,
+    "wiki" TEXT,
     "level_id" INT NOT NULL REFERENCES "level" ("id"),
     -- 'Good answer'
     "answer_id" INT NOT NULL REFERENCES "answer" ("id"),

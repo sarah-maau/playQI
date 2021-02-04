@@ -13,7 +13,7 @@ Il contient 24 quiz répartis en 9 catégories :
 - Insolite
 - Sciences
 
-J'ai moi-même défini les thèmes, les questions et les réponses associées. 
+J'ai défini les thèmes, les questions et les réponses associées. 
 
 Tout le monde peut accéder aux quiz et parcourir les questions et les réponses possibles. Pour jouer, il faut créer un compte et se connecter. Quand c'est fait, l'utilisateur répond aux questions et peut visualiser son score, les réponses qu'il a donné et les explications de chacune des bonnes réponses. 
 
@@ -27,15 +27,23 @@ J'ai entièrement réalisé ce projet NodeJS lors de mon troisième mois de form
 
 Il s'agit du premier projet que je code en POO.
 
-Pour ce faire, j'ai utilisé Express et Sequelize. Pour la partie Sign-up et Sign-in, j'ai utilisé bcrypt et email-validator. 
- 
 J'ai codé ce projet en 4 jours (de la base de donnée au rendu final).
 
+## Stack
+- Node js
+- Express
+- Sequelize
+- bcrypt
+- email-validator
+- ejs
+- PostgreSQL
+- Sqitch
+ 
 ## Languages utilisés 
 
 - HTML5, CSS3
 - JavaScript 
-- PostgreSQL (avec tables relationnelles)
+- SQL (avec tables relationnelles)
   
  ![playQI_MLD](docs/MLD.png)
 
