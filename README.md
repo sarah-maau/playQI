@@ -30,20 +30,20 @@ Il s'agit du premier projet que je code en POO.
 J'ai codé ce projet en 4 jours (de la base de donnée au rendu final).
 
 ## Stack
-- Node js
+- Node.js
 - Express
 - Sequelize
 - bcrypt
 - email-validator
 - ejs
-- PostgreSQL
+- PostgreSQL (avec tables relationnelles)
 - Sqitch
  
 ## Languages utilisés 
 
 - HTML5, CSS3
 - JavaScript 
-- SQL (avec tables relationnelles)
+- SQL 
   
  ![playQI_MLD](docs/MLD.png)
 
@@ -94,3 +94,42 @@ Page pour **modifier un tag :**
 Page pour **associer un tag à un quiz :**
 ![playQI_quiz_tag_association_page](docs/screenshots/quiz_tag_association.png)
 
+## Installation 
+
+1. Cloner le repo 
+- en utilisant la clé SSH
+```
+git clone git@github.com:sarah-maau/playQI.git
+```
+- en utilisant HTTPS
+```
+git clone https://github.com/sarah-maau/playQI.git
+```
+
+2. Installer les dépendances 
+
+```
+npm i
+```
+
+3. Créer un fichier .env reprenant les informations fournies dans le document `.env.example`
+   
+4. Créer une base de donnée, puis chargez les tables en utilisant la commande Sqitch
+
+```
+sqitch deploy db:pg:<nom de la base de données>
+```
+5. Charger les données
+   
+```
+psql -d <nom de la base de données> -f ./data/import_data.sql
+```
+6. Lancer le script
+
+```
+npm start
+```
+7. Une fois sur la page, pour tester l'application dans son entiereté, créer un utilisateur et se connecter avec les identifiants !
+
+## Licence
+Ce projet est sous licence MIT - voir le fichier LICENSE.md pour plus de détails
