@@ -23,7 +23,7 @@ Ce site est responsive.
 
 ## Réalisation
 
-J'ai entièrement réalisé ce projet NodeJS lors de mon troisième mois de formation en développement web FS JavaScrpt.
+J'ai entièrement réalisé ce projet Node.js lors de mon troisième mois de formation en développement web FS JavaScrpt.
 
 Il s'agit du premier projet que je code en POO.
 
@@ -111,14 +111,15 @@ git clone https://github.com/sarah-maau/playQI.git
 ```
 npm i
 ```
-
-3. Créer un fichier .env reprenant les informations fournies dans le document `.env.example`
    
-4. Créer une base de donnée, puis chargez les tables en utilisant la commande Sqitch
+3. Créer une base de données, puis chargez les tables en utilisant la commande Sqitch
 
 ```
 sqitch deploy db:pg:<nom de la base de données>
 ```
+
+4. Créer un fichier .env reprenant les informations fournies dans le document `.env.example`
+
 5. Charger les données
    
 ```
