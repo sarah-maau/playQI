@@ -132,4 +132,4 @@ npm start
 7. Une fois sur la page, pour tester l'application dans son entiereté, créer un utilisateur et se connecter avec les identifiants !
 
 ## Licence
-Ce projet est sous licence MIT - voir le fichier LICENSE.md pour plus de détails
+Ce projet est sous licence MIT - voir le fichier `LICENSE` pour plus de détails
