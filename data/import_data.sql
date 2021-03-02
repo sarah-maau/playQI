@@ -1052,6 +1052,7 @@ INSERT INTO "tag" ("id", "name") VALUES
 
 INSERT INTO "quiz_has_tag" ("quiz_id", "tag_id") VALUES
 (1, 1),
+(1, 1),
 (2, 1),
 (3, 1),
 (4, 2),

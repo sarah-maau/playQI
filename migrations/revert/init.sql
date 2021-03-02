@@ -2,7 +2,7 @@
 
 BEGIN;
 
-DROP TABLE IF EXISTS "level",
+DROP TABLE "level",
 "answer",
 "user",
 "quiz",

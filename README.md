@@ -96,6 +96,10 @@ Page pour **associer un tag à un quiz :**
 
 ## Installation 
 
+**Pré-requis**
+- Node.js pour le télécharger c'est [ici](https://nodejs.org/en/download/)
+- PostgreSQL
+
 1. Cloner le repo 
 - en utilisant la clé SSH
 ```
@@ -112,25 +116,27 @@ git clone https://github.com/sarah-maau/playQI.git
 npm i
 ```
    
-3. Créer une base de données, puis chargez les tables en utilisant la commande Sqitch
+3.  Renommer le fichier `.env.example` en `.env` avec vos variables d'environnement
+
+4.  Créer une base de données
+
+5. Renommer le fichier the sqitch.example.conf to sqitch.conf,puis chargez les tables en utilisant la commande Sqitch :
 
 ```
 sqitch deploy db:pg:<nom de la base de données>
 ```
 
-4. Créer un fichier .env reprenant les informations fournies dans le document `.env.example`
-
-5. Charger les données
+6. Charger les données
    
 ```
 psql -d <nom de la base de données> -f ./data/import_data.sql
 ```
-6. Lancer le script
+7. Lancer le script
 
 ```
 npm start
 ```
-7. Une fois sur la page, pour tester l'application dans son entiereté, créer un utilisateur et se connecter avec les identifiants !
+8. Une fois sur la page, pour tester l'application dans son entiereté, créer un utilisateur et se connecter avec les identifiants !
 
 ## Licence
 Ce projet est sous licence MIT - voir le fichier `LICENSE` pour plus de détails
