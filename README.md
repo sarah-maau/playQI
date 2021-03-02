@@ -120,7 +120,7 @@ npm i
 
 4.  Créer une base de données
 
-5. Renommer le fichier the sqitch.example.conf to sqitch.conf,puis chargez les tables en utilisant la commande Sqitch :
+5. Renommer le fichier the sqitch.example.conf to sqitch.conf,puis chargez les tables en utilisant la commande [Sqitch](https://sqitch.org/):
 
 ```
 sqitch deploy db:pg:<nom de la base de données>
